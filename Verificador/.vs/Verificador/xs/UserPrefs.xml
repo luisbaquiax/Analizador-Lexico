@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{426F930B-BD9E-4474-8023-0DDD99FF1485}|Default">
+  <MonoDevelop.Ide.ItemProperties.AnalizadorLexico PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Verificador/Verificador/Lexema.cs">
+    <Files>
+      <File FileName="Verificador/Program.cs" Line="12" Column="21" />
+      <File FileName="Verificador/MainWindow.cs" Line="21" Column="1" />
+      <File FileName="Verificador/Properties/AssemblyInfo.cs" Line="10" Column="32" />
+      <File FileName="Verificador/Verificador/Lexema.cs" Line="6" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Verificador" expanded="True">
+            <Node name="Verificador" expanded="True">
+              <Node name="UserInterface" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Verificador" expanded="True">
+                <Node name="Lexema.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
