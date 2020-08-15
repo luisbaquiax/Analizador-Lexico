@@ -7,8 +7,7 @@ public partial class MainWindow : Gtk.Window
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         Build();
-        Lexema lexema = new Lexema("hola a todos 22222 3156aaa465 soy otra cadena 151546 0vvv0001");
-        lexema.mostrarLexemas();
+
     }
 
     protected void OnDeleteEvent(object sender, DeleteEventArgs a)
@@ -19,6 +18,7 @@ public partial class MainWindow : Gtk.Window
 
     protected void OnVerLexemasClicked(object sender, EventArgs e)
     {
-
+        Lexema lexema = new Lexema("hola a todos 22222 3156aaa465 soy otra cadena 151546 0vvv0001");
+        lexema.mostrarLexemas();
     }
 }

@@ -11,9 +11,7 @@ public partial class MainWindow
 
 	private global::Gtk.Label label1;
 
-	private global::Gtk.ScrolledWindow GtkScrolledWindow;
-
-	private global::Gtk.TextView textview2;
+	private global::Gtk.Entry txtVista;
 
 	protected virtual void Build()
 	{
@@ -55,27 +53,24 @@ public partial class MainWindow
 		w3.X = 258;
 		w3.Y = 55;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
-		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
-		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
-		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-		this.textview2 = new global::Gtk.TextView();
-		this.textview2.WidthRequest = 400;
-		this.textview2.HeightRequest = 200;
-		this.textview2.CanFocus = true;
-		this.textview2.Name = "textview2";
-		this.GtkScrolledWindow.Add(this.textview2);
-		this.fixed1.Add(this.GtkScrolledWindow);
-		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.GtkScrolledWindow]));
-		w5.X = 71;
-		w5.Y = 164;
+		this.txtVista = new global::Gtk.Entry();
+		this.txtVista.WidthRequest = 400;
+		this.txtVista.HeightRequest = 200;
+		this.txtVista.CanFocus = true;
+		this.txtVista.Name = "txtVista";
+		this.txtVista.IsEditable = false;
+		this.txtVista.InvisibleChar = '•';
+		this.fixed1.Add(this.txtVista);
+		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.txtVista]));
+		w4.X = 120;
+		w4.Y = 224;
 		this.Add(this.fixed1);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 556;
-		this.DefaultHeight = 443;
+		this.DefaultWidth = 569;
+		this.DefaultHeight = 468;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 		this.verLexemas.Clicked += new global::System.EventHandler(this.OnVerLexemasClicked);

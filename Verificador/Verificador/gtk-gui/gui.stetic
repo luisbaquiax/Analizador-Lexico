@@ -6,7 +6,7 @@
   <import>
     <widget-library name="../bin/Debug/Verificador.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="556 443">
+  <widget class="Gtk.Window" id="MainWindow" design-size="580 468">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Verificador de lexemas</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -59,9 +59,9 @@
             <property name="MemberName" />
             <property name="ShadowType">In</property>
             <child>
-              <widget class="Gtk.TextView" id="textview2">
+              <widget class="Gtk.TextView" id="textArea">
                 <property name="MemberName" />
-                <property name="WidthRequest">400</property>
+                <property name="WidthRequest">300</property>
                 <property name="HeightRequest">200</property>
                 <property name="CanFocus">True</property>
                 <property name="ShowScrollbars">True</property>
@@ -70,8 +70,8 @@
             </child>
           </widget>
           <packing>
-            <property name="X">71</property>
-            <property name="Y">164</property>
+            <property name="X">121</property>
+            <property name="Y">206</property>
           </packing>
         </child>
       </widget>

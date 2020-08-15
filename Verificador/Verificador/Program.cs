@@ -9,8 +9,8 @@ namespace Verificador
         {
             Application.Init();
             MainWindow win = new MainWindow();
-            //win.Show();
-            //Application.Run();
+            win.Show();
+            Application.Run();
         }
     }
 }
