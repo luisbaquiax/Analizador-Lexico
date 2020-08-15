@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Verificador/Program.cs" Line="13" Column="33" />
       <File FileName="Verificador/MainWindow.cs" Line="11" Column="33" />
-      <File FileName="Verificador/Verificador/Lexema.cs" Line="27" Column="63" />
+      <File FileName="Verificador/Verificador/Lexema.cs" Line="7" Column="48" />
       <File FileName="Verificador/gtk-gui/MainWindow.cs" Line="12" Column="32" />
     </Files>
     <Pads>
