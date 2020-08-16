@@ -25,9 +25,8 @@ namespace Verificador.Verificador
                 esPalabra(palabras[i]);
                 esNumero(palabras[i]);
                 esCadenaCualquiera(palabras[i]);
-                }
+            }
             Console.WriteLine(listaPalabras());
-            ingresarCadenaDeCaracteres("caracter1212ca");
             Console.WriteLine(listNumeros());
             Console.WriteLine(listCharacters());
         }
@@ -79,9 +78,9 @@ namespace Verificador.Verificador
         public Boolean esCadenaCualquiera(String subcadena)
         {
             int contador = 0;
+            Console.WriteLine(">>>>>>>>>> "+subcadena+" >>>>>>>>>>>");
             char[] cadenitas = subcadena.ToCharArray();
-            for (int i = 0; i < cadenitas.Length; i++)
-            {
+            for (int i = 0; i < cadenitas.Length; i++){
                if ((cadenitas[i] == 'a') || (cadenitas[i] == 'A')
                     || (cadenitas[i] == 'b') || (cadenitas[i] == 'B')
                     || (cadenitas[i] == 'c') || (cadenitas[i] == 'C')
@@ -113,18 +112,16 @@ namespace Verificador.Verificador
                     || (cadenitas[i] == '2') || (cadenitas[i] == '7')
                     || (cadenitas[i] == '3') || (cadenitas[i] == '8')
                     || (cadenitas[i] == '4') || (cadenitas[i] == '9')
-                    )
-                {
+                    ) {
                     contador++;
-                    if (cadenitas.Length == contador)
-                    {
-                        ingresarCadenaDeCaracteres(subcadena);
-
-                        return true;
+                    Console.WriteLine(contador);
                     }
-
                 }
+            if (cadenitas.Length == contador)
+            {
+                ingresarCadenaDeCaracteres(subcadena);
 
+                return true;
             }
 
             return false;
@@ -183,7 +180,8 @@ namespace Verificador.Verificador
 
         public void ingresarCadenaDeCaracteres(String cadena)
         {
-            for (int i =0; i< listaCaracteres.Length;i++) {
+            for (int i =0; i< this.listaCaracteres.Length;i++) 
+            {
                  if(listaCaracteres == null) {
                     listaCaracteres[i] = cadena;
                     return;

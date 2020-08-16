@@ -18,7 +18,7 @@ public partial class MainWindow : Gtk.Window
 
     protected void OnVerLexemasClicked(object sender, EventArgs e)
     {
-        Lexema lexema = new Lexema("hola a todos 22222 3156aaa465 soy otra cadena 151546 0vvv0001");
+        Lexema lexema = new Lexema("hola a todos 22222 a2s3q5w soy otra cadena 151546 w6e9e1");
         lexema.mostrarLexemas();
     }
 }
