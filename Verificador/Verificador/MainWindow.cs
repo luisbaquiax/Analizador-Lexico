@@ -20,5 +20,7 @@ public partial class MainWindow : Gtk.Window
     {
         Lexema lexema = new Lexema("hola a todos 22222 a2s3q5w soy otra cadena 151546 w6e9e1");
         lexema.mostrarLexemas();
+        //txtOracion.Text = lexema.listaPalabras();
+        textArea.Body = " "+lexema.listaPalabras();
     }
 }

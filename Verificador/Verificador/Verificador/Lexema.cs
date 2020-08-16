@@ -7,6 +7,7 @@ namespace Verificador.Verificador
         private String[] palabras = new string[10];
         private String[] listaNumeros = new String[10];
         private String[] listaCaracteres = new String [10];
+        private String[] monedaGuatemala = new string[2];
           
         public Lexema(String oracion)
         {
@@ -17,18 +18,19 @@ namespace Verificador.Verificador
 
             String texto = this.oracion;
             String[] palabras = texto.Split(' ');
-            for (int i = 0; i < palabras.Length; i++)
-            {
-                Console.WriteLine(palabras[i]+ " > todos");
-            }
-            for (int i = 0; i < palabras.Length; i++) {
+           
+            for (int i = 0; i < (palabras.Length-1); i++) {
                 esPalabra(palabras[i]);
                 esNumero(palabras[i]);
                 esCadenaCualquiera(palabras[i]);
             }
             Console.WriteLine(listaPalabras());
             Console.WriteLine(listNumeros());
-            Console.WriteLine(listCharacters());
+            Console.WriteLine(mostrarCaracteres());
+        }
+
+        public void verSiEsMondeaGuatemala(String subcadena) { 
+            
         }
 
         public Boolean esPalabra(String subcadena)
@@ -75,7 +77,7 @@ namespace Verificador.Verificador
             return false;
         }
 
-        public Boolean esCadenaCualquiera(String subcadena)
+        public void esCadenaCualquiera(String subcadena)
         {
             int contador = 0;
             Console.WriteLine(">>>>>>>>>> "+subcadena+" >>>>>>>>>>>");
@@ -115,16 +117,17 @@ namespace Verificador.Verificador
                     ) {
                     contador++;
                     Console.WriteLine(contador);
+                    if (cadenitas.Length == contador)
+                    {
+                        ingresarCadenaDeCaracteres(subcadena);
+                        //return true;
+                       
                     }
                 }
-            if (cadenitas.Length == contador)
-            {
-                ingresarCadenaDeCaracteres(subcadena);
+                }
+            Console.WriteLine(cadenitas.Length+" largo subcadena");
 
-                return true;
-            }
-
-            return false;
+            //return false;
         }
 
 
@@ -180,9 +183,9 @@ namespace Verificador.Verificador
 
         public void ingresarCadenaDeCaracteres(String cadena)
         {
-            for (int i =0; i< this.listaCaracteres.Length;i++) 
+            for (int i = 0; i< this.listaCaracteres.Length; i++) 
             {
-                 if(listaCaracteres == null) {
+                 if(listaCaracteres[i] == null) {
                     listaCaracteres[i] = cadena;
                     return;
                  }
@@ -213,9 +216,9 @@ namespace Verificador.Verificador
             return cadenas;
         }
 
-        public String listCharacters()
+        public String mostrarCaracteres()
         {
-            String cadenas = "Lista de carcteres: \n";
+            String cadenas = "Lista de todas las cadenas: \n";
             for (int i = 0; i < listaCaracteres.Length; i++)
             {
                 if (listaCaracteres[i] != null)
