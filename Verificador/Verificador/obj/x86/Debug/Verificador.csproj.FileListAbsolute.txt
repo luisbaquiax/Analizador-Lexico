@@ -1,6 +1,0 @@
-/home/luis/Projects/Verificador/Verificador/bin/Debug/Verificador.exe
-/home/luis/Projects/Verificador/Verificador/bin/Debug/Verificador.pdb
-/home/luis/Projects/Verificador/Verificador/obj/x86/Debug/Verificador.csprojAssemblyReference.cache
-/home/luis/Projects/Verificador/Verificador/obj/x86/Debug/Verificador.csproj.CoreCompileInputs.cache
-/home/luis/Projects/Verificador/Verificador/obj/x86/Debug/Verificador.exe
-/home/luis/Projects/Verificador/Verificador/obj/x86/Debug/Verificador.pdb
