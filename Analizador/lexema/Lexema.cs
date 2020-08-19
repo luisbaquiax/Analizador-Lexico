@@ -200,7 +200,33 @@ namespace Verificador.Verificador
             return false;
         }
 
+        public Boolean esNumeroDecimal(String subcadena)
+        {
+            int contador = 0;
+            char[] cadenitas = subcadena.ToCharArray();
+            for (int i = 0; i < cadenitas.Length; i++)
+            {
+                if ((cadenitas[i] == '0') || (cadenitas[i] == '5')
+                    || (cadenitas[i] == '1') || (cadenitas[i] == '6')
+                    || (cadenitas[i] == '2') || (cadenitas[i] == '7')
+                    || (cadenitas[i] == '3') || (cadenitas[i] == '8')
+                    || (cadenitas[i] == '4') || (cadenitas[i] == '9')
+                    || (cadenitas[i] == '.')
+                    )
+                {
+                    contador++;
+                }
 
+            }
+
+            if (cadenitas.Length == contador)
+            {
+                //nzingresarNumero(subcadena);
+                return true;
+            }
+
+            return false;
+        }
 
         public void ingresarPalabra(String palabra)
         {
